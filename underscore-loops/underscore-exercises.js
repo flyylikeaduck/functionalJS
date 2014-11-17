@@ -34,3 +34,26 @@ var checkValue = function(array, val) {
   })
   return result;
 };
+
+var testObj = {
+  one: 1,
+  two: 2,
+  three: 3
+};
+
+var pusher = function(object) {
+  var newArray = [];
+  //for(var key in object) {
+  //  newArray.push(object[key]);
+  //}
+  //return newArray;
+ return _.map(object, function(element)  {
+    return element
+  })
+};
+
+console.log(pusher(testObj));
+
+var map = function(object, func, context) {
+  context = context || [];
+}
